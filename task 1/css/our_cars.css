@@ -1,0 +1,114 @@
+body {
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+  min-width: 320px;
+  overflow-x: hidden;
+  height: auto;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 8px 7px 0px rgba(0, 0, 0, 0.23);
+  box-shadow: #000;
+}
+.navbar .container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-menu {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.navbar-menu li {
+  display: inline-block;
+}
+
+.navbar-menu li a {
+  display: inline-block;
+  color: black;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.navbar-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  margin-right: 20px;
+  color: darkred;
+}
+.navbar-menu li a:hover {
+  opacity: 1;
+  transform: scale(1.07);
+}
+.navbar-brand:hover {
+  color: red;
+}
+
+.dropdown {
+  float: inline-start;
+  margin-inline: -30px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.hardlist ol {
+  counter-reset: item;
+}
+
+.hardlist li {
+  display: block;
+}
+
+.hardlist li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+.hardlist {
+  width: 960px;
+  position: absolute;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.body {
+  background-image: url("ahttps://krendel.by/2242-thickbox_default/vafelnaja-kartinka-dollary.jpg");
+  background-size: no-repeat;
+  background-attachment: scroll;
+  background-position: right;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+}
